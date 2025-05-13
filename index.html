@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sun Urban City - Dự án đẳng cấp tại Hà Nam</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="font-sans bg-gray-50">
+  <!-- Hero Section -->
+  <section class="bg-cover bg-center h-screen text-white flex items-center justify-center" style="background-image: url('https://via.placeholder.com/1600x900');">
+    <div class="bg-black bg-opacity-60 p-8 rounded-xl text-center max-w-2xl">
+      <h1 class="text-4xl md:text-5xl font-bold mb-4">Sun Urban City</h1>
+      <p class="text-lg md:text-xl mb-6">Khu đô thị hiện đại, đẳng cấp tại trung tâm Hà Nam</p>
+      <a href="#form" class="bg-yellow-500 hover:bg-yellow-600 text-white px-6 py-3 rounded-lg font-semibold">Đăng ký tư vấn</a>
+    </div>
+  </section>
+
+  <!-- Thông tin nổi bật -->
+  <section class="py-16 px-6 md:px-20 bg-white text-gray-800">
+    <h2 class="text-3xl font-bold mb-8 text-center">Tổng Quan Dự Án</h2>
+    <div class="grid md:grid-cols-3 gap-6">
+      <div>
+        <h3 class="text-xl font-semibold">Vị trí vàng</h3>
+        <p>Toạ lạc tại trung tâm thành phố Phủ Lý, Hà Nam – kết nối thuận tiện với Hà Nội và các khu công nghiệp.</p>
+      </div>
+      <div>
+        <h3 class="text-xl font-semibold">Chủ đầu tư uy tín</h3>
+        <p>Được phát triển bởi Sun Group – đơn vị đứng sau hàng loạt dự án đẳng cấp toàn quốc.</p>
+      </div>
+      <div>
+        <h3 class="text-xl font-semibold">Tiện ích đẳng cấp</h3>
+        <p>Hệ thống trường học, trung tâm thương mại, công viên và khu thể thao nội khu hiện đại.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Hình ảnh tiện ích -->
+  <section class="py-16 px-6 bg-gray-100">
+    <h2 class="text-3xl font-bold mb-8 text-center">Hình ảnh dự án</h2>
+    <div class="grid md:grid-cols-3 gap-4">
+      <img src="https://via.placeholder.com/400x250" class="rounded-lg shadow-md" />
+      <img src="https://via.placeholder.com/400x250" class="rounded-lg shadow-md" />
+      <img src="https://via.placeholder.com/400x250" class="rounded-lg shadow-md" />
+    </div>
+  </section>
+
+  <!-- Lý do nên đầu tư -->
+  <section class="py-16 px-6 md:px-20 bg-white text-gray-800">
+    <h2 class="text-3xl font-bold mb-8 text-center">Tại sao nên chọn Sun Urban City?</h2>
+    <ul class="list-disc list-inside space-y-2 max-w-3xl mx-auto">
+      <li>Giá trị tăng trưởng cao nhờ vị trí chiến lược</li>
+      <li>Không gian sống xanh, sạch, an toàn</li>
+      <li>Pháp lý rõ ràng, sổ đỏ lâu dài</li>
+    </ul>
+  </section>
+
+  <!-- Form đăng ký -->
+  <section id="form" class="py-16 px-6 md:px-20 bg-yellow-50">
+    <h2 class="text-3xl font-bold mb-8 text-center">Đăng ký nhận thông tin chi tiết</h2>
+    <form action="https://formsubmit.co/duybinh200103@gmail.com" method="POST" class="max-w-xl mx-auto bg-white p-6 rounded-lg shadow-md">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_subject" value="Khách hàng mới từ Sun Urban City">
+      <input type="hidden" name="_next" value="https://sunurbancity.vercel.app/thankyou.html">
+      <div class="mb-4">
+        <label class="block font-semibold mb-2">Họ và tên</label>
+        <input type="text" name="name" class="w-full border border-gray-300 rounded px-4 py-2" required />
+      </div>
+      <div class="mb-4">
+        <label class="block font-semibold mb-2">Số điện thoại</label>
+        <input type="tel" name="phone" class="w-full border border-gray-300 rounded px-4 py-2" required />
+      </div>
+      <div class="mb-6">
+        <label class="block font-semibold mb-2">Nhu cầu</label>
+        <textarea name="message" class="w-full border border-gray-300 rounded px-4 py-2" rows="3"></textarea>
+      </div>
+      <button class="bg-yellow-500 hover:bg-yellow-600 text-white px-6 py-3 rounded-lg font-semibold w-full">Gửi thông tin</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white py-6 text-center">
+    <p>© 2025 Sun Urban City. Tư vấn bởi Đội ngũ chuyên nghiệp.</p>
+    <p>Hotline: <a href="tel:0123456789" class="underline">0123 456 789</a></p>
+  </footer>
+</body>
+</html>
